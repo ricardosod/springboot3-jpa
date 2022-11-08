@@ -3,7 +3,7 @@ package com.sod9.course.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class User  implements Serializable{
+public class User implements Serializable{
 
 	
 	private static final long serialVersionUID = 1L;
@@ -65,10 +65,6 @@ public class User  implements Serializable{
 		this.password = password;
 	}
 
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
-
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -91,6 +87,6 @@ public class User  implements Serializable{
 		return "User [id=" + id + ", name=" + name + ", email=" + email + ", phone=" + phone + ", password=" + password
 				+ "]";
 	}
-
+	
 	
 }
